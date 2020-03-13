@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div class="movies">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <h4 class="">Movies <span class="float-right" style="font-size: 20px;"><a [routerLink]="['/movies']">View All</a></span></h4>
+            <hr class="mt-0">
+        </div>
+        <div class="col-lg-3 col-md-4" *ngFor="let movie of movies">
+            <div class="card">
+                <a [routerLink]="['/movie', movie.id]">
+                    <img class="card-img-top" src="{{ movie.image }}" alt="{{ movie.title }}">
+                </a>
+                <div class="card-body p-2">
+                    <a [routerLink]="['/movie', movie.id]"><h5 class="card-title">{{ movie.title }}</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
