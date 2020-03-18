@@ -2,10 +2,9 @@
     <div class="col-lg-8 col-md-8">
         <div class="card" *ngFor="let movie of movie">
             <div class="embed-responsive embed-responsive-16by9">
-                
-                <iframe class="embed-responsive-item" [src]="updateVideoUrl(movie.movieurl)" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+
+                <!-- <iframe class="embed-responsive-item" [src]="updateVideoUrl(movie.movieurl)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <video controls="controls" x-webkit-airplay="allow" [src]="updateVideoUrl(movie.movieurl)"></video>
             </div>
             <div class="card-body">
                 <h4 class="card-title">{{ movie.title }}</h4>
@@ -21,8 +20,7 @@
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 col-md-5">
-                        <img class="card-img"
-                            src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
+                        <img class="card-img" src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
                     </div>
                     <div class="col-lg-7 col-md-7 pl-0 pt-2">
                         <h6 class="card-title">Title of the next video</h6>
@@ -34,8 +32,7 @@
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 col-md-5">
-                        <img class="card-img"
-                            src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
+                        <img class="card-img" src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
                     </div>
                     <div class="col-lg-7 col-md-7 pl-0 pt-2">
                         <h6 class="card-title">Title of the next video</h6>
@@ -47,8 +44,7 @@
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 col-md-5">
-                        <img class="card-img"
-                            src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
+                        <img class="card-img" src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
                     </div>
                     <div class="col-lg-7 col-md-7 pl-0 pt-2">
                         <h6 class="card-title">Title of the next video</h6>
@@ -60,8 +56,7 @@
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 col-md-5">
-                        <img class="card-img"
-                            src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
+                        <img class="card-img" src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
                     </div>
                     <div class="col-lg-7 col-md-7 pl-0 pt-2">
                         <h6 class="card-title">Title of the next video</h6>
@@ -73,8 +68,7 @@
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 col-md-5">
-                        <img class="card-img"
-                            src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
+                        <img class="card-img" src="https://tasteofamsterdam.com/wp-content/uploads/2018/01/toa-test4-600x400.jpg" alt="">
                     </div>
                     <div class="col-lg-7 col-md-7 pl-0 pt-2">
                         <h6 class="card-title">Title of the next video</h6>
